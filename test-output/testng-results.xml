@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-05-09T09:55:35Z" name="Suite" finished-at="2023-05-09T09:55:51Z" duration-ms="15716">
+    <groups>
+    </groups>
+    <test started-at="2023-05-09T09:55:35Z" name="Login to POD" finished-at="2023-05-09T09:55:51Z" duration-ms="15716">
+      <class name="com.test.wrappers.GenericWrappers">
+        <test-method is-config="true" signature="genericWrappers()[pri:0, instance:com.test.wrappers.GenericWrappers@a1cdc6d]" started-at="2023-05-09T15:25:31Z" name="genericWrappers" finished-at="2023-05-09T15:25:35Z" duration-ms="4528" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- genericWrappers -->
+      </class> <!-- com.test.wrappers.GenericWrappers -->
+      <class name="com.test.testCases.TC001_Login">
+        <test-method signature="run()[pri:0, instance:com.test.testCases.TC001_Login@175b9425]" started-at="2023-05-09T15:25:35Z" name="run" finished-at="2023-05-09T15:25:51Z" duration-ms="15687" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [The  or password you entered is incorrect.] but found [The username or password you entered is incorrect.]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [The  or password you entered is incorrect.] but found [The username or password you entered is incorrect.]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at com.test.wrappers.GenericWrappers.assertEqualsMethod(GenericWrappers.java:71)
+	at com.test.pages.Login.textValidations(Login.java:44)
+	at com.test.testCases.TC001_Login.run(TC001_Login.java:17)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- run -->
+      </class> <!-- com.test.testCases.TC001_Login -->
+    </test> <!-- Login to POD -->
+  </suite> <!-- Suite -->
+</testng-results>
